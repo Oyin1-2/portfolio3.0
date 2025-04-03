@@ -86,9 +86,7 @@ export default function Navbar() {
         </div>
       </div>
 
-    
       <section className="w-full h-[50vh] lg:h-[25vh] bg-[#231F20] flex flex-col lg:justify-normal px-5 lg:p-9 pt-6 lg:pt-0">
-     
         <div className="flex items-center">
           <h1 className="text-[#86a6d9] text-4xl lg:text-5xl font-bold mr-6">
             About
@@ -96,7 +94,6 @@ export default function Navbar() {
           <div className="flex-1 h-[3px] bg-[#86a6d9]"></div>
         </div>
 
-    
         <div className="mt-8 text-gray-300 lg:text-1xl">
           <p>
             I am a passionate Full Stack Developer with experience in building
@@ -149,7 +146,6 @@ export default function Navbar() {
         </div>
       </div>
       <section className="w-full h-[50vh] lg:h-[25vh] bg-[#231F20] flex flex-col lg:justify-normal px-5 lg:p-9 pt-6 lg:pt-0">
-      
         <div className="flex items-center">
           <h1 className="text-[#86a6d9] text-4xl lg:text-5xl font-bold mr-6">
             Work
@@ -157,7 +153,6 @@ export default function Navbar() {
           <div className="flex-1 h-[3px] bg-[#86a6d9]"></div>
         </div>
 
-      
         <div className="mt-8 text-gray-300 lg:text-1xl">
           <p>
             As a 13-year-old passionate and fast-growing coder, I am always
@@ -169,9 +164,87 @@ export default function Navbar() {
           </p>
         </div>
       </section>
-      <div className="w-[100%] h-[150vh] lg:h-[90vh] bg-red-300">
-
+      <div className="w-[100%] h-[100vh] lg:h-[130vh] bg-[#231F20] flex flex-col lg:flex-row items-center gap-9 justify-between px-5 lg:p-9 overflow-y-auto lg:overflow-hidden">
+        <div>
+          <img
+            src="/portfolio.png"
+            alt="Emmanuel's Profile Picture"
+            className="w-full h-full object-contain  "
+          />
+          <h1 className="text-white font-sans">
+            <span className="font-bold ">Design Portfolio</span> <br />
+            Html, Css, Javascript and React
+          </h1>
+        </div>
+        <div>
+          {" "}
+          <img
+            src="/portfolio.png"
+            alt="Emmanuel's Profile Picture"
+            className="w-full h-full object-contain "
+          />
+          <h1 className="text-white ">
+            <span className="font-bold ">Design Portfolio</span> <br />
+            Html, Css, Javascript and React
+          </h1>
+        </div>
       </div>
+      <div className="w-full bg-[#231F20] flex flex-col items-center px-5 lg:p-9">
+        <h1 className="text-white text-2xl lg:text-4xl font-bold text-center mb-6">
+          Some of my projects
+        </h1>
+
+        <div className=" w-full py-6 px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+          <div className="w-full max-w-xs">
+            <a href="https://oyin1-2.github.io/calculator/">
+              <img
+                src="/calculator.png"
+                alt="Calculator App"
+                className="w-full h-[250px] object-contain rounded-lg shadow-lg hover:opacity-80 transition duration-300"
+              />
+            </a>
+          </div>
+
+          <div className="w-full max-w-xs">
+            <a href="https://multi-step-form-a2plgl0fz-oyin1-2s-projects.vercel.app">
+              <img
+                src="/picture.png"
+                alt="Multi-Step Form"
+                className="w-full h-[250px] object-contain rounded-lg shadow-lg hover:opacity-80 transition duration-300"
+              />
+            </a>
+          </div>
+
+          <div className="w-full max-w-xs">
+            <a href="https://oyin1-2.github.io/interior-design/">
+              <img
+                src="/fine.png"
+                alt="Info App"
+                className="w-full h-[250px] object-contain rounded-lg shadow-lg hover:opacity-80 transition duration-300"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <section className="w-full h-[50vh] lg:h-[25vh] bg-[#231F20] flex flex-col lg:justify-normal px-5 lg:p-9 pt-6 lg:pt-0">
+        <div className="flex items-center">
+          <h1 className="text-[#86a6d9] text-4xl lg:text-5xl font-bold mr-6">
+            Contact Me
+          </h1>
+          <div className="flex-1 h-[3px] bg-[#86a6d9]"></div>
+        </div>
+
+        <div className="mt-8 text-gray-300 lg:text-1xl">
+          <p>
+            As a 13-year-old passionate and fast-growing coder, I am always
+            excited to work on new projects and improve my skills. Despite my
+            age, I have built a solid foundation in Full Stack Development and
+            am continually exploring new technologies to create dynamic,
+            interactive web applications. I am eager to take on new challenges
+            and expand my portfolio as I grow as a developer.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
