@@ -100,7 +100,7 @@ export default function Navbar() {
             front-end and back-end development, and I enjoy turning complex
             problems into simple, beautiful, and intuitive designs. When I'm not
             coding, you can find me exploring new technologies or spending time
-            outdoors. I believe in continuous learning and am always looking for
+            outdoors. I believe in continuous learning and i'm always looking for
             new challenges that push my limits.
           </p>
         </div>
