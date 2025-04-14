@@ -4,7 +4,6 @@ import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Reusable NavLink component for consistency
   const NavLink = ({ href, children }) => (
     <a href={href} className="text-gray-300 hover:text-white">
       {children}
@@ -196,7 +195,7 @@ export default function Navbar() {
 
         <div className=" w-full py-6 px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           <div className="w-full max-w-xs">
-            <a href="https://oyin1-2.github.io/calculator/">
+            <a href="https://oyin1-2.github.io/calculator/ " target="_blank">
               <img
                 src="/calculator.png"
                 alt="Calculator App"
@@ -206,7 +205,10 @@ export default function Navbar() {
           </div>
 
           <div className="w-full max-w-xs">
-            <a href="https://multi-step-form-a2plgl0fz-oyin1-2s-projects.vercel.app">
+            <a
+              href="https://multi-step-form-a2plgl0fz-oyin1-2s-projects.vercel.app"
+              target="_blank"
+            >
               <img
                 src="/picture.png"
                 alt="Multi-Step Form"
@@ -215,8 +217,11 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="w-full max-w-xs">
-            <a href="https://oyin1-2.github.io/interior-design/">
+          <div className="w-full max-w-xs ">
+            <a
+              href="https://oyin1-2.github.io/interior-design/"
+              target="_blank"
+            >
               <img
                 src="/fine.png"
                 alt="Info App"
@@ -226,7 +231,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <section className="w-full h-[50vh] lg:h-[25vh] bg-[#231F20] flex flex-col lg:justify-normal px-5 lg:p-9 pt-6 lg:pt-0">
+      <section className="w-full h-[20vh] lg:h-[25vh] bg-[#231F20] flex flex-col lg:justify-normal px-5 lg:p-9 pt-6 lg:pt-0">
         <div className="flex items-center">
           <h1 className="text-[#86a6d9] text-4xl lg:text-5xl font-bold mr-6">
             Contact Me
@@ -236,15 +241,80 @@ export default function Navbar() {
 
         <div className="mt-8 text-gray-300 lg:text-1xl">
           <p>
-            As a 13-year-old passionate and fast-growing coder, I am always
-            excited to work on new projects and improve my skills. Despite my
-            age, I have built a solid foundation in Full Stack Development and
-            am continually exploring new technologies to create dynamic,
-            interactive web applications. I am eager to take on new challenges
-            and expand my portfolio as I grow as a developer.
+            I would love to hear about your project and how i can help. Please
+            fill n the form below, and i'll get back to you as soon as possible
           </p>
         </div>
       </section>
+      <div className="w-full h-[70vh] lg:h-[90vh]  bg-[#231F20] px-9 lg:px-[100px] pt-7 lg:pt-0">
+        <div className="w-full px-7 h-full bg-[#231F20]">
+          <form className="w-full max-w-xl mx-auto  p-8 rounded-2xl shadow-lg space-y-6">
+            <div>
+              <label
+                className="block text-gray-700 font-medium mb-2"
+                htmlFor="name"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div>
+              <label
+                className="block text-gray-700 font-medium mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div>
+              <label
+                className="block text-gray-700 font-medium mb-2"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows="5"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="bg-[#231F20] text-white px-6 py-2 rounded-md hover:bg-black transition-all"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+      <div className="w-full h-[10vh] lg:h-[10vh] bg-[#231F20] flex items-center justify-between px-5 lg:p-9 pt-6 lg:pt-0">
+        <div>
+          <h1>
+            <div className="text-white text-[2rem] font-bold">
+              <span className="font-lg">Emma</span>nuel
+            </div>
+          </h1>
+        </div>
+        <div>
+          <FaGithub className="text-5xl" />
+        </div>
+      </div>
     </>
   );
 }
