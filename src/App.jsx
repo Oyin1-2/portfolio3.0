@@ -206,7 +206,8 @@ export default function Navbar() {
 
           <div className="w-full max-w-xs">
             <a
-              href="https://multi-step-form-a2plgl0fz-oyin1-2s-projects.vercel.app/info"
+              href="https://multi-step-form-a2plgl0fz-oyin1-2s-projects.vercel.app
+"
               target="_blank"
             >
               <img
