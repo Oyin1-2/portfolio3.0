@@ -259,7 +259,7 @@ export default function Navbar() {
               <input
                 type="text"
                 id="name"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]  text-white"
                 placeholder="Your name"
               />
             </div>
@@ -274,7 +274,7 @@ export default function Navbar() {
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20] text-white"
                 placeholder="you@example.com"
               />
             </div>
@@ -289,7 +289,7 @@ export default function Navbar() {
               <textarea
                 id="message"
                 rows="5"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#231F20]  text-white"
                 placeholder="Tell me about your project..."
               ></textarea>
             </div>
